@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffd3c9;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+/* Card */
+.card {
+    width: 520px;
+    background: white;
+    padding: 40px;
+    border-radius: 25px;
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+
+    text-align: center;
+}
+
+/* Badge */
+.badge {
+    display: inline-block;
+
+    background: #ff5268;
+    color: white;
+
+    padding: 7px 17px;
+    border-radius: 20px;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+/* Judul */
+h1 {
+    font-size: 30px;
+    color: #20252d;
+    margin-bottom: 10px;
+}
+
+/* Subtitle */
+.subtitle {
+    color: #8a8f98;
+    font-size: 16px;
+
+    margin-bottom: 32px;
+}
+
+/* Form */
+form {
+    text-align: left;
+}
+
+label {
+    display: block;
+
+    color: #292d35;
+    font-size: 15px;
+    font-weight: bold;
+
+    margin-bottom: 8px;
+    margin-top: 22px;
+}
+
+label:first-child {
+    margin-top: 0;
+}
+
+/* Input dan textarea */
+input,
+textarea {
+    width: 100%;
+
+    border: 2px solid #e1e5eb;
+    border-radius: 12px;
+
+    background: #fafbfc;
+
+    padding: 16px;
+
+    font-size: 16px;
+    font-family: inherit;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+input {
+    height: 56px;
+}
+
+textarea {
+    height: 105px;
+    resize: vertical;
+}
+
+/* Placeholder */
+input::placeholder,
+textarea::placeholder {
+    color: #92979e;
+}
+
+/* Efek saat diklik */
+input:focus,
+textarea:focus {
+    border-color: #ff5268;
+    background: white;
+}
+
+/* Tombol */
+button {
+    width: 100%;
+
+    margin-top: 35px;
+    padding: 17px;
+
+    border: none;
+    border-radius: 12px;
+
+    background: #ff5268;
+    color: white;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow: 0 7px 15px rgba(255, 82, 104, 0.25);
+
+    transition: 0.3s;
+}
+
+/* Hover tombol */
+button:hover {
+    background: #f43f57;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Tampilan HP */
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .card {
+        width: 100%;
+        padding: 30px 25px;
+        border-radius: 20px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+    }
+}
